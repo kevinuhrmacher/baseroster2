@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block content %}
+<html>
+<body>
+
+<div class="player-image">
+    <div id=playerimgbox"><img src="{{ STATIC_URL }}img/team.jpg" width="100%" class="player-image"></div>
+    <div class="caption">PHOTOS FROM GOHEELS.COM</div>
+</div>
+    
+<div id="playercontent">
+    <div class="row" id="basicinfo">
+        <div class="col-md-12">
+                <h2 class="basicinfohed">Carolina Diamond Heels</h2>
+        </div>
+    </div>
+
+    
+    <div class="men col-md-12">
+        <h3>Roster</h3>
+        {% for player in players %}
+            <div class="col-md-3 teamcapsule">
+                <span class="teamname">{{ player.number }}</span>&nbsp&nbsp<span><a href="{{ player.pk }}">{{ player.firstname }} {{ player.lastname }}</a></span>&nbsp&nbsp<span>{{ player.position }}</span>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="col-md-12">
+        <h3>Coaches</h3>
+        {% for coach in coaches %}
+            <div class="col-md-12 teamcapsule">
+               <span class="teamname">{{ coach.firstname }}&nbsp{{ coach.lastname }}</span>&nbsp&nbsp<span><a href="{% url 'roster_home' %}coach/{{ coach.pk }}">{{ coach.title }}</a></span>
+            </div>
+        {% endfor %}
+    </div>
+
+    <div class="col-md-12 bottomspace"></div>
+    <div class="col-md-12 bottomspace"></div>
+
+</div>
+    
+{% endblock %}

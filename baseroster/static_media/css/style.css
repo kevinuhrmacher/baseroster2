@@ -1,0 +1,250 @@
+ /* fonts */
+
+font-family: {'Titillium Web', sans-serif;
+}
+ 
+ /* general style */
+
+
+body {
+  font-family: Titillium Web;
+  body width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    color: #609CCC;
+}
+
+a:hover {
+    color: #609CCC;
+    text-decoration: none;
+}
+
+#playercontent {
+    background-color: #FFFFFF;
+    margin: 50px;
+}
+
+ /* nav */
+
+#nav-icon {
+    width: 150px;
+    overflow: inherit;
+    position:absolute;
+    left: 30px;
+}
+
+.nav-links {
+    margin: 0 0 0 100px;
+}
+
+.tofront {
+    z-index: 250;
+}
+
+.nav-name {
+   color: #FFFFFF;
+   font-family: Titillium Web;
+   font-weight: 700;
+   margin: 10px 0 0 0;
+   text-transform: uppercase;
+   display: block;
+   float: right;
+}
+
+#topbar {
+    background-color: #535353;
+    border-bottom: solid 2px #C9C8C8;
+    width: 100%;
+    z-index: 400;
+}
+
+.nav-pills {
+    display: block;
+    float: left;
+    text-transform: uppercase;
+}
+
+ /* player pages */
+ 
+.caption {
+    display: block;
+    float: right;
+    font-size: .7em;
+    margin-right: 50px;
+}
+    
+.player-image {
+    width:100%;
+    overflow: hidden;
+    object-fit: fill;
+    }
+    
+
+.playernumber {
+    color:#FFFFFF;
+    font-family: Titillium Web;
+    font-weight: 700;
+    font-size: 3em;
+    position: absolute;
+    top: 80px;
+    left: 15px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.playername {
+    color:#FFFFFF;
+    font-family: Titillium Web;
+    font-weight: 700;
+    font-size: 7em;
+    opacity: .7;
+    position: absolute;
+    top: 100px;
+    left: 15px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-transform: uppercase;
+}
+
+    /*player page blocks*/
+
+#basicinfo {
+    border-bottom: solid 1px #C9C8C8;
+    margin: 0 0 40px 0;
+    padding: 0 0 20px 0;
+}
+
+.basicinfohed {
+    font-family: Titillium Web;
+    font-size: 4em;
+    font-weight: 700;
+    margin: -20px 0 0 0;
+}
+
+.basicinfohed2 {
+    font-family: Titillium Web;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: -50px 0 0 0;
+}
+
+#statrow {
+    border-top: solid 1px #C9C8C8;
+    border-bottom: solid 1px #C9C8C8;
+    margin: 20px 0 50px 0;
+    padding: 10px 0 20px 0;
+    width: 100%;
+}
+
+.statheader {
+    font-family: Titillium Web;
+    font-weight: 700;
+    padding: 20px 0 0 0;
+    text-align: center;
+}
+
+.statnumber {
+    font-family: Titillium Web;
+    font-size: 3em;
+    font-weight: 200;
+    text-align: center;
+}
+
+.statnumberdesc {
+    font-family: Titillium Web;
+    font-size: 1em;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+    text-align: auto;
+    text-transform: uppercase;
+}
+
+.tab-pane {
+    margin: 10px 0 0 0;
+}
+
+.homemap {
+    display: block;
+    float: left;
+}
+
+.precol {
+    font-family: Titillium Web;
+    font-size: 2em;
+}
+
+.tabtext {
+    margin: -10px 0 0 0;
+}
+
+.tabhed {
+    font-family: Titillium Web;
+}
+
+/* coaching */
+
+.coachsaga {
+    line-height: 20px;
+}
+
+.coachsaga:first-child:first-letter {
+    float: left;
+    color: #609CCC;
+    font-size: 75px;
+    font-weight: 800;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-family: Titillium Web;
+}
+
+
+.bottomspace {
+    margin-bottom: 50px;
+}
+
+.bottomspace2 {
+    margin-bottom: 200px;
+}
+
+/* team page */
+
+.teamcapsule {
+    border-bottom: solid 1px #C9C8C8;
+    height: 30px;
+    padding: 5px 0 0 0;
+}
+
+.teamname {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.men {
+    margin: 0 0 0px 0;
+}
+
+.women {
+    margin: 50px 0 0 0;
+}
+
+/* twitter footer */
+
+#twitterfooter {
+    background-color: #535353;
+    height: 25px;
+}
+
+.footerlinks {
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    font-family: Titillium Web;
+}

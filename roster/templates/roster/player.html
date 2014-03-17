@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block content %}
+<html>
+<head>
+    <title>{{ name }}</title>
+</head>
+
+<body>
+
+<div class="player-image">
+
+    <div id=playerimgbox"><img src="{{ STATIC_URL }}img/playerpic-{{ player.number }}.jpg" width="80%" class="player-image"></div>
+    <div class="caption">PHOTOS FROM GOHEELS.COM</div>
+</div>
+
+
+<div id="playercontent">
+
+<div class="row" id="basicinfo">
+    <div class="col-md-12">
+            <div>
+                <h2 class="basicinfohed">{{ player.number }}&nbsp&nbsp{{ player.firstname }}&nbsp{{ player.lastname }}</h2>
+            </div>
+    </div>
+    <div class="col-md-12">
+            <div class="basicinfo col-md-2"><span class="statnumber">{{ player.position }}</span><br>Position</div>
+            <div class="basicinfo col-md-2"><span class="statnumber">{{ player.dominant_hand }}</span><br>Hand</div>
+            <div class="basicinfo col-md-3"><span class="statnumber">{{ player.year }}</span><br>Year</div>
+            <div class="basicinfo col-md-2"><span class="statnumber">{{ player.height }}</span><br>Height</div>
+            <div class="basicinfo col-md-2"><span class="statnumber">{{ player.weight }}</span><br>Weight</div>
+            <div class="basicinfo col-xs-1"></div> <!-- <img src="{{ STATIC_URL }}img/position-{{ player.number }}.jpg" width="100%" class="player-image"> -->
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="col-md-5">
+            <img src="http://maps.googleapis.com/maps/api/staticmap?center={{ player.home_lat }},{{ player.home_long }}&zoom=7&size=600x400&
+&markers=color:0x609CCC%7Clabel:%7C{{ player.home_lat }},{{ player.home_long }}&maptype=terrain&sensor=true" class="img-thumbnail homemap">
+            <span class="precol"><b>Hometown:</b> {{ player.hometown }}</span><br>
+            <span class="precol">{{ player.high_school }} High School</span>
+    </div>
+    
+    <div class="col-md-7" id="storytabs">
+    <!-- Here goes JS written based on the year of the player -->
+    
+        {% if player.year == "Senior" %}
+            <div>
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#junior" data-toggle="tab"><span> Junior </span></a></li>
+              <li><a href="#sophomore" data-toggle="tab"><span> Sophomore </span></a></li>
+              <li><a href="#freshman" data-toggle="tab"><span> Freshman </span></a></li>
+              <li><a href="#highschool" data-toggle="tab"><span> High School </span></a></li>
+              <li><a href="#personal" data-toggle="tab"><span> Personal </span></a></li>
+            </ul>
+            </div>
+        
+            <div class="row tab-content col-md-12">
+              <div class="tab-pane fade in active" id="junior"> {{ player.story_junior }} </div>
+              <div class="tab-pane fade" id="sophomore"> {{ player.story_sophomore }} </div>
+              <div class="tab-pane fade" id="freshman"> {{ player.story_freshman }} </div>
+              <div class="tab-pane fade" id="highschool"> <strong>{{ player.high_school }} High School</strong><br>{{ player.story_highschool }} </li></div>
+              <div class="tab-pane fade" id="personal"> {{ player.story_personal }} </div>
+            </div>
+        {% endif %}
+        
+        {% if player.year == "Junior" %}
+            <div>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#sophomore" data-toggle="tab"><span> Sophomore </span></a></li>
+                  <li><a href="#freshman" data-toggle="tab"><span> Freshman </span></a></li>
+                  <li><a href="#highschool" data-toggle="tab"><span> High School </span></a></li>
+                  <li><a href="#personal" data-toggle="tab"><span> Personal </span></a></li>
+                </ul>
+            </div>
+            
+            <div class="row tab-content col-md-12">
+                <div class="tab-pane fade in active" id="sophomore"><span> {{ player.story_sophomore }} </span></div>
+                <div class="tab-pane fade" id="freshman"><span> {{ player.story_freshman }} </span></div>
+                <div class="tab-pane fade" id="highschool"> <strong>{{ player.high_school }} High School</strong><br>{{ player.story_highschool }} </li></div>
+                <div class="tab-pane fade" id="personal"><span> {{ player.story_personal }} </span></div>
+            </div>
+        {% endif %}
+        
+        {% if player.year == "Sophomore" %}
+            <div>
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#freshman" data-toggle="tab"><span> Freshman </span></a></li>
+                  <li><a href="#highschool" data-toggle="tab"><span> High School </span></a></li>
+                  <li><a href="#personal" data-toggle="tab"><span> Personal </span></a></li>
+                </ul>
+            </div>
+            
+            <div class="row tab-content col-md-12">
+                <div class="tab-pane fade in active" id="freshman"> {{ player.story_freshman }} </div>
+                <div class="tab-pane fade" id="highschool">  <strong>{{ player.high_school }} High School</strong><br>{{ player.story_highschool }} </li> </div>
+                <div class="tab-pane fade" id="personal"> {{ player.story_personal }} </div>
+            </div>
+        {% endif %}
+
+        {% if player.year == "Freshman" %}
+            <div>
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#highschool" data-toggle="tab"><span> High School </span></a></li>
+              <li><a href="#personal" data-toggle="tab"><span> Personal </span></a></li>
+            </ul>
+            </div>
+            
+            <div class="row tab-content col-md-12">
+              <div class="tab-pane fade in active" id="highschool"> <strong>{{ player.high_school }} High School</strong><br>{{ player.story_highschool }} </li></div>
+              <div class="tab-pane fade" id="personal"><span> {{ player.story_personal }} </span></div>
+            </div>
+        {% endif %}    
+</div>
+
+
+<div class="row col-md-12" id="statrow">
+    <div class="col-md-3">
+        <h4 class="statheader">{{ player.firstname }}&nbsp{{ player.lastname }} </br> this season:</h4></div>
+    <div class="col-md-2"><span class="statnumber">{{ player.gp_gs }}</span><br><span class="statnumberdesc">games-starts</span></div>
+    <div class="col-md-1"><span class="statnumber">{{ player.at_bats }}</span><br><span class="statnumberdesc">at-bats</span></div>
+    <div class="col-md-2"><span class="statnumber">{{ player.batting_avg }}</span><br><span class="statnumberdesc">batting average</span></div>
+    <div class="col-md-1"><span class="statnumber">{{ player.hits }}</span><br><span class="statnumberdesc">hits</span></div>
+    <div class="col-md-1"><span class="statnumber">{{ player.rbi }}</span><br><span class="statnumberdesc">RBI</span></div>
+    <div class="col-md-2"><span class="statnumber">{{ player.on_base_percentage }}</span><br><span class="statnumberdesc">on base percentage</span></div>
+</div>
+
+</div>
+
+
+
+</body>    
+</html>
+{% endblock %}

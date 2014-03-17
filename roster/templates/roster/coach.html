@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block content %}
+<html>
+<head>
+    <title>{{ name }}</title>
+</head>
+
+<body>
+
+<div class="player-image">
+    <div id=playerimgbox"><img src="{{ STATIC_URL }}img/coachpic-{{ coach.lastname }}.jpg" width="80%" class="player-image"></div>
+    <div class="caption">PHOTOS FROM GOHEELS.COM</div>
+</div>
+
+
+<div id="playercontent">
+<div class="row" id="basicinfo">
+    <div class="col-md-12">
+            <div>
+                <h2 class="basicinfohed">{{ coach.firstname }}&nbsp{{ coach.lastname }}</h2>
+            </div>
+    </div>
+    <div class=" row col-md-12">
+        <span class="basicinfo col-md-10"><span class="statnumber">{{ coach.title }}</span><br>TITLE</span>
+        <span class="basicinfo col-md-2"><span class="statnumber">{{ coach.coaching_age }}</span><br>YEARS AT CAROLINA</span>
+    </div>
+</div>
+
+<div class="col-md-12 bottomspace">
+    <p class="coachsaga">{{ coach.story }}</p>
+</div>
+
+</div>
+
+
+
+</body>    
+</html>
+{% endblock %}

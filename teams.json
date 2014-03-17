@@ -1,0 +1,298 @@
+[
+
+	{
+		"pk":2,
+		"model":"roster.team",
+		"fields":{
+			"name":"Basketball",
+			"gender": "Men's",
+			"url": "http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12965&SPSID=668156&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12965&SPSID=667867"
+		}
+	},
+
+	{
+		"pk":3,
+		"model":"roster.team",
+		"fields":{
+			"name":"Cross Country",
+			"gender": "Men's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12966&SPSID=667868&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12966&SPSID=668159"
+		}
+
+	},
+
+	{
+		"pk":4,
+		"model":"roster.team",
+		"fields":{
+			"name":"Fencing",
+			"gender":"Men's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12983&SPSID=667892&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12983&SPSID=668064"
+		}
+	},
+
+	{
+		"pk":5,
+		"model":"roster.team",
+		"fields":{
+			"name":"Football",
+			"gender":"Men's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12962&SPSID=667864&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12962&SPSID=667866"
+		}
+
+	},
+
+	{
+		"pk":6,
+		"model":"roster.team",
+		"fields":{
+			"name":"Golf",
+			"gender":"Men's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12967&SPSID=668160&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12967&SPSID=668161"
+		}
+
+	},
+
+	{
+		"pk":7,
+		"model":"roster.team",
+		"fields":{
+			"name":"Lacrosse",
+			"gender":"Men's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12968&SPSID=668162&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12968&SPSID=667871"
+		}
+
+	},
+
+	{
+		"pk":8,
+		"model":"roster.team",
+		"fields":{
+			"name":"Soccer",
+			"gender":"Men's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12969&SPSID=667873&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12969&SPSID=668056"
+		}
+
+	},
+
+	{
+		"pk":9,
+		"model":"roster.team",
+		"fields":{
+			"name":"Swimming & Diving",
+			"gender":"Men's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12970&SPSID=667876&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12970&SPSID=667877"
+		}
+
+	},
+
+	{
+		"pk":10,
+		"model":"roster.team",
+		"fields":{
+			"name":"Tennis",
+			"gender":"Men's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12971&SPSID=668164&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12971&SPSID=668057"
+		}
+
+	},
+
+	{
+		"pk":11,
+		"model":"roster.team",
+		"fields":{
+			"name":"Track & Field",
+			"gender":"Men's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12972&SPSID=667905&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12972&SPSID=668179"
+		}
+
+	},
+
+	{
+		"pk":12,
+		"model":"roster.team",
+		"fields":{
+			"name":"Wrestling",
+			"gender":"Men's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12984&SPSID=667880&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12984&SPSID=667881"
+		}
+
+	},
+
+		{
+		"pk":13,
+		"model":"roster.team",
+		"fields":{
+			"name":"Basketball",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12979&SPSID=668062&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12979&SPSID=668171"
+		}
+
+	},
+
+	{
+		"pk":14,
+		"model":"roster.team",
+		"fields":{
+			"name":"Field Hockey",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12961&SPSID=667882&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12961&SPSID=668169"
+		}
+
+	},
+
+	{
+		"pk":15,
+		"model":"roster.team",
+		"fields":{
+			"name":"Golf",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12980&SPSID=667885&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12980&SPSID=668172"
+		}
+
+	},
+
+		{
+		"pk":16,
+		"model":"roster.team",
+		"fields":{
+			"name":"Gymnastics",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12964&SPSID=667878&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12964&SPSID=668060"
+		}
+
+	},
+
+		{
+		"pk":17,
+		"model":"roster.team",
+		"fields":{
+			"name":"Lacrosse",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12981&SPSID=667903&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12981&SPSID=668178"
+		}
+
+	},
+
+		{
+		"pk":18,
+		"model":"roster.team",
+		"fields":{
+			"name":"Rowing",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12975&SPSID=667893&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12975&SPSID=667895"
+		}
+
+	},
+
+		{
+		"pk":19,
+		"model":"roster.team",
+		"fields":{
+			"name":"Soccer",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12982&SPSID=667900&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12982&SPSID=668177"
+		}
+
+	},
+
+		{
+		"pk":20,
+		"model":"roster.team",
+		"fields":{
+			"name":"Softball",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12976&SPSID=667888&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12976&SPSID=667890"
+		}
+
+	},
+
+		{
+		"pk":21,
+		"model":"roster.team",
+		"fields":{
+			"name":"Tennis",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12985&SPSID=668065&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12985&SPSID=668066"
+		}
+
+	},
+
+		{
+		"pk":22,
+		"model":"roster.team",
+		"fields":{
+			"name":"Volleyball",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12977&SPSID=668175&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12977&SPSID=668176"
+		}
+
+	},
+
+	{
+		"pk":23,
+		"model":"roster.team",
+		"fields":{
+			"name":"Cross Coutntry",
+			"gender": "Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12966&SPSID=667868&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12966&SPSID=668159"
+		}
+
+	},
+		{
+		"pk":24,
+		"model":"roster.team",
+		"fields":{
+			"name":"Fencing",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12983&SPSID=667892&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12983&SPSID=668064"
+		}
+	},
+		{
+		"pk":25,
+		"model":"roster.team",
+		"fields":{
+			"name":"Swimming & Diving",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12970&SPSID=667876&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12970&SPSID=667877"
+		}
+
+	},
+
+		{
+		"pk":26,
+		"model":"roster.team",
+		"fields":{
+			"name":"Track & Field",
+			"gender":"Women's",
+			"url":"http://www.goheels.com/SportSelect.dbml?DB_OEM_ID=3350&SPID=12972&SPSID=667905&SITE=UNC&DB_OEM_ID=3350",
+			"roster_url":"http://www.goheels.com/SportSelect.dbml?SITE=UNC&DB_OEM_ID=3350&SPID=12972&SPSID=668179"
+		}
+
+	}
+
+]

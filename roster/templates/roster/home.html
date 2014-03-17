@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% load url from future %}
+
+{% block content %}
+<html>
+<body>
+
+<div class="player-image">
+    <!--<span class="playernumber hidden-phone">{{ player.firstname }}</span>
+    <span class="playername hidden-phone">{{ player.lastname }}</span>-->
+    <div id=playerimgbox"><img src="{{ STATIC_URL }}img/team-sports.jpg" width="100%" class="player-image"></div>
+    <div class="caption">PHOTOS FROM GOHEELS.COM</div>
+</div>
+    
+<div id="playercontent">
+    <div class="row" id="basicinfo">
+        <div class="col-md-12">
+            <div>
+                <h2 class="basicinfohed">Teams</h2>
+            </div>
+        </div>
+    </div>
+
+<div class="men col-md-12">
+    <h3>Men's Sports</h3>
+    {% for team in teams %}
+        {% if team.gender == "Men's" %}  
+            <div class="col-md-4 teamcapsule">
+                <span class="teamname">{{ team.name }}</span>&nbsp<span><a href="{{ team.roster_url }}">Roster</a></span>
+            </div>
+        {% endif %}
+    {% endfor %}
+            <div class="col-md-4 teamcapsule">
+                <span class="teamname">Baseball</span>&nbsp<span><a href="/player">Roster</a></span>
+            </div>
+</div>
+
+<div class="women col-md-12">
+<h3>Women's Sports</h3> <!-- Title IX whaddup -->
+    {% for team in teams %}
+        {% if team.gender == "Women's" %}
+            <div class="col-md-4 teamcapsule">
+                <span class="teamname">{{ team.name }}</span>&nbsp<span><a href="{{ team.roster_url }}">Roster</a></span>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
+    
+</div>
+
+<div class="col-md-12 bottomspace"></div>
+<div class="col-md-12 bottomspace"></div>
+
+   {% endblock %}
+</body>
+</html>
