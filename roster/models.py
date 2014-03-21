@@ -17,10 +17,10 @@ class Player(models.Model):
     
     lastname = models.TextField(null=False)
     imgurl = models.TextField(null=True)
-    dominant_hand = models.CharField(null=True, max_length=3)
+    dominant_hand = models.CharField(null=True, max_length=5)
     position = models.CharField(null=True, max_length=6)
-    height = models.CharField(null=True, max_length=3, verbose_name="Height")
-    weight = models.CharField(null=True, max_length=3, verbose_name="Weight")
+    height = models.CharField(null=True, max_length=5, verbose_name="Height")
+    weight = models.CharField(null=True, max_length=5, verbose_name="Weight")
     year = models.CharField(null=True, max_length=30)
     hometown = models.TextField(null=True, verbose_name="Hometown")
     home_long = models.TextField(null=True, verbose_name="Hometown Longitude")
