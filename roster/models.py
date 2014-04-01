@@ -25,7 +25,7 @@ class Player(models.Model):
     hometown = models.TextField(null=True, verbose_name="Hometown")
     home_long = models.TextField(null=True, verbose_name="Hometown Longitude")
     home_lat = models.TextField(null=True, verbose_name="Hometown Latitude")
-    high_school = models.CharField(null=True, max_length=140, verbose_name="High School")
+    high_school = models.TextField(null=True, verbose_name="High School")
     batting_avg = models.CharField(null=True, max_length=5)
     gp_gs = models.CharField(null=True, max_length=5)
     at_bats = models.CharField(null=True, max_length=5)
