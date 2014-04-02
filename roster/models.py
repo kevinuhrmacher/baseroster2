@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 class Player(models.Model):
-    number = models.IntegerField(unique=True, null=True, max_length=2, verbose_name="No.")
+    number = models.IntegerField(unique=True, null=True, max_length=4, verbose_name="No.")
     firstname = models.TextField(null=False)
     class Meta(object):
         verbose_name_plural = "Players"
